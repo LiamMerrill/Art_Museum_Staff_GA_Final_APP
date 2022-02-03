@@ -19,7 +19,7 @@ import pandas as pd
 #from sklearn.tree import plot_tree
 #from pdpbox import pdp, info_plots
 #from sklearn.pipeline import make_pipeline
-#import sklearn
+import sklearn
 import streamlit as st
 import pickle
 
