@@ -9,7 +9,7 @@ Created on Sun Jan 30 03:27:01 2022
 
 import pandas as pd
 #import numpy as np
-import plotly.express as px
+#import plotly.express as px
 #import plotly.graph_objects as go
 #import category_encoders as ce
 #import matplotlib.pyplot as pl
@@ -71,7 +71,7 @@ if section == 'Data Explorer':
         grouping = create_grouping(x_axis, y_axis)
         st.bar_chart(grouping)
     elif chart_type == 'area':
-        fig = px.strip(df[[x_axis, y_axis]], x=x_axis, y=y_axis)
+        fig = pd.strip(df[[x_axis, y_axis]], x=x_axis, y=y_axis)
         st.plotly_chart(fig)
     
     st.write(df)
